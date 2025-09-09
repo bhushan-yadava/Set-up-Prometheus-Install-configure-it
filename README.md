@@ -20,7 +20,6 @@ The project is designed for **learning and experimentation**, and can serve as a
 ## 📂 Project Structure
 
 prometheus-node-monitoring/
-├─ clean-repo/ # Clean repo after removing large binaries
 ├─ node-metrics-app/ # Node.js app exposing metrics
 │ ├─ index.js # Main app code
 │ ├─ package.json # NPM dependencies
@@ -55,25 +54,24 @@ Copy code
 ## ⚙️ Installation
 
 1. **Clone this repository:**
-```bash
+
 git clone https://github.com/bhushan-yadava/Set-up-Prometheus-Install-configure-it.git
+
 cd Set-up-Prometheus-Install-configure-it/clean-repo
+
 Install Node.js dependencies:
 
-bash
-Copy code
 cd node-metrics-app
 npm install
 Run Node.js metrics app:
 
-bash
-Copy code
 node index.js
 Configure Prometheus:
 
 Create prometheus.yml pointing to Node.js app metrics endpoint (e.g., http://localhost:3000/metrics).
 
-Start Prometheus using your local installation.
+Start Prometheus using your local installation
+
 
 🖥️ Usage
 Open Prometheus dashboard: http://localhost:9090/
@@ -82,9 +80,9 @@ Run queries to monitor metrics exposed by your Node.js app.
 
 Example Prometheus query:
 
-text
-Copy code
 nodejs_memory_rss_bytes
+
+
 📚 Learning Outcomes
 Understanding Prometheus installation and configuration.
 
